@@ -1,4 +1,22 @@
+@import "./vars.scss";
+@import "./media.scss";
+
 body {
   margin: 0;
-  background-color: red;
+  font-family: $font;
+  background: $main-color;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+* {
+  box-sizing: border-box;
 }
